@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.portfolio-section {
+  height: 100vh;
+}
+
+#contact-section {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #16161a;
+    border-radius: 8px;
+    padding: 1.25rem; 
+
+    /* Style input and textarea elements when they are focused (clicked) */
+    input:focus,
+    textarea:focus {
+      border: 1px solid #ffffff;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+      outline: none; /* Remove default blue outline */
+    }
+
+    /* Style input and textarea elements when hovering, but not when focused */
+    input:not(:focus):hover,
+    textarea:not(:focus):hover {
+      border: 1px solid #888888;
+    }
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem; 
+  }
+
+  input,
+  textarea {
+    border-radius: 8px;
+    padding: 0.5rem; 
+    margin-bottom: 0.5rem;
+    border: none; 
+  }
+}
