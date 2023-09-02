@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import HeroSection from "./components/HeroSection";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
