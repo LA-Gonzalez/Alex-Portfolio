@@ -1,4 +1,5 @@
 import "./App.scss";
+import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       <HeroSection />
       <AboutMe />
       <Projects />
