@@ -1,23 +1,11 @@
 import React from "react";
 
+import { scrollToSection } from "../utils/scrollHandler";
+
 import "./HeroSection.scss";
 
 const HeroSection = () => {
-  // Function to scroll to the AboutMe section
-  const scrollToAboutMe = () => {
-    const aboutMeSection = document.getElementById("about-me-section");
-    if (aboutMeSection) {
-      window.scrollTo({
-        top: aboutMeSection.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
-  // Attach the scroll function to the button click event
-  const handleButtonClick = () => {
-    scrollToAboutMe();
-  };
   return (
     <div id="hero-section" className="portfolio-section hero-section-container">
       <div className="hero-text-container">
@@ -31,7 +19,9 @@ const HeroSection = () => {
         </text>
       </div>
 
-      <button onClick={handleButtonClick} >Check out my page!</button>
+      <button onClick={() => scrollToSection("about-me-section")}>
+        Check out my page!
+      </button>
     </div>
   );
 };
