@@ -1,0 +1,43 @@
+/* Navbar.scss */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #333; /* Navbar background color */
+  }
+  
+  .logo {
+    /* Style your logo */
+  }
+  
+  .links {
+    /* Style your links container */
+  }
+  
+  /* Position the accordion button to the right on mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: row; /* Keep items in a row for mobile */
+      justify-content: space-between; /* Spread items to the edges */
+    }
+  
+    .links {
+      display: none; /* Hide links by default on mobile */
+    }
+  
+    .accordion-button {
+      /* Style for the accordion button (to show/hide links) */
+      background: none; /* Remove background */
+      border: none; /* Remove border */
+      cursor: pointer;
+      font-size: 24px; /* Adjust font size */
+      color: #ffffff; /* Icon color */
+    }
+  
+    .links.active {
+      display: block; /* Show links when active class is applied */
+    }
+  }
+  
