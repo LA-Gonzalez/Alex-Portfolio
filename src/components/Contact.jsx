@@ -14,7 +14,8 @@ const Contact = () => {
 
   return (
     <div id="contact-section" className="portfolio-section">
-      <h2>Contact Me</h2>
+      <h3>Contact Me</h3>
+      <hr/>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input id="name" type="text" name="name" />
